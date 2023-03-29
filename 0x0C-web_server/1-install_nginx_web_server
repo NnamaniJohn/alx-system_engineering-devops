@@ -5,7 +5,7 @@ apt-get update
 apt-get install -y nginx
 
 mkdir /etc/nginx/html
-echo "<header>Hello World!</header>" > /etc/nginx/html/index.html
+echo "Hello World!" > /etc/nginx/html/index.nginx-debian.html
 printf %s "server {
      listen      80 default_server;
      listen      [::]:80 default_server;
