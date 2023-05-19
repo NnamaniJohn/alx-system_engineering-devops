@@ -1,10 +1,10 @@
 ## Web Stack Outage Postmortem: Database Connectivity Issue
 
-#Issue Summary:
+# Issue Summary:
 Duration: May 15, 2023, 10:00 AM - May 15, 2023, 11:30 AM (UTC)
 Impact: Database service was unavailable, causing slow response times and errors for all users. 75% of users experienced disruptions during the outage.
 
-#Timeline:
+# Timeline:
 
 10:00 AM: The issue was detected when monitoring systems alerted a high number of database connection failures.
 10:05 AM: The operations team started investigating the problem and noticed the slow response times and intermittent errors reported by users.
@@ -20,7 +20,7 @@ The root cause of the issue was a misconfigured database connection pool that al
 
 To resolve the issue, the database connection pool settings were adjusted to limit the maximum number of concurrent connections. This prevented the database server from becoming overloaded. The affected services were restarted to apply the new configuration, restoring normal database connectivity.
 
-#Corrective and Preventative Measures:
+# Corrective and Preventative Measures:
 
 Improve configuration management practices to ensure proper review and testing of software updates before deployment.
 Enhance monitoring capabilities to detect abnormal database behavior and connection pool exhaustion.
